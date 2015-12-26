@@ -1,5 +1,6 @@
 <?php
-require_once "./4-2.php";
+require_once "4-2.php";
+require_once "4-3.php";
 
 class Model
 {
