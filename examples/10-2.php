@@ -75,6 +75,6 @@ class V2Circle extends Circle
     protected function drawCircle()
     {
         $DP2 = new DP2();
-        $DP2->draw_a_circle($this->_x, $this->_y, $this->_r);
+        $DP2->drawcircle($this->_x, $this->_y, $this->_r);
     }
 }
