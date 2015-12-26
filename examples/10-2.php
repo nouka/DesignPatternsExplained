@@ -30,6 +30,34 @@ abstract class Recrangle extends Shape
     abstract protected function drawLine($x1, $y1, $x2, $y2);
 }
 
+class V1Rectangle extends Rectangle
+{
+    public function __construct($x1, $y1, $x2, $y2)
+    {
+        parent::__construct($x1, $y1, $x2, $y2);
+    }
+
+    protected function drawLine()
+    {
+        $DP1 = new DP1();
+        $DP1->draw_a_line($this->_x1, $this->_y1, $this->_x2, $this->_y2);
+    }
+}
+
+class V2Rectangle extends Rectangle
+{
+    public function __construct($x1, $y1, $x2, $y2)
+    {
+        parent::__construct($x1, $y1, $x2, $y2);
+    }
+
+    protected function drawLine()
+    {
+        $DP2 = new DP2();
+        $DP2->drawline($this->_x1, $this->_y1, $this->_x2, $this->_y2);
+    }
+}
+
 abstract class Circle extends Shape
 {
     protected $_x;
@@ -53,7 +81,7 @@ abstract class Circle extends Shape
 
 class V1Circle extends Circle
 {
-    public function V1Circle($x, $y, $r)
+    public function __construct($x, $y, $r)
     {
         parent::__construct($x, $y, $r);
     }
@@ -67,7 +95,7 @@ class V1Circle extends Circle
 
 class V2Circle extends Circle
 {
-    public function V1Circle($x, $y, $r)
+    public function __construct($x, $y, $r)
     {
         parent::__construct($x, $y, $r);
     }
