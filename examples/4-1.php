@@ -1,9 +1,6 @@
 <?php
-class Future {}
-class Slot {}
-class V1Slot extends Slot {}
-class Hole {}
-class V1Hole extends Hole {}
+require_once "./4-2.php";
+
 class Model
 {
     protected $modelNumber;
