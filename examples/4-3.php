@@ -1,17 +1,19 @@
 <?php
-require_once "4-1.php";
-require_once "4-2.php";
-require_once "4-4.php";
+
+require_once '4-1.php';
+require_once '4-2.php';
+require_once '4-4.php';
 
 class V2Model extends Model
 {
     public static function buildV2Model(string $modelName)
     {
         if (!$this->openModel($modelName)) {
-            return null;
+            return;
         }
 
         $this->buildModel();
+
         return $this;
     }
 
@@ -20,7 +22,7 @@ class V2Model extends Model
         $nElements = getNumberOfElements();
         $features = array();
 
-        for ($i = 0; $i < $nElements; $i++) {
+        for ($i = 0; $i < $nElements; ++$i) {
             $oogF = getElement($i);
             switch ($oogF->getType()) {
                 case OOG_SLOT:
