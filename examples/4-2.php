@@ -3,10 +3,16 @@ require_once "4-1.php";
 require_once "4-3.php";
 require_once "4-4.php";
 
-class Feature {}
+class Feature
+{
+}
 
-class SlotFeature extends Feature {}
-class HoleFeature extends Feature {}
+class SlotFeature extends Feature
+{
+}
+class HoleFeature extends Feature
+{
+}
 
 class V1Slot extends SlotFeature
 {

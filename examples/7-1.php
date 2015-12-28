@@ -3,7 +3,9 @@
  * Adapterパターンの実装
  */
 
-class Shape {}
+class Shape
+{
+}
 
 class Circle extends Shape
 {

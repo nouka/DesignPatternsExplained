@@ -6,12 +6,14 @@ require_once "4-4.php";
 class Model
 {
     protected $modelNumber;
-    protected function openModel($modelName) {}
+    protected function openModel($modelName)
+    {
+    }
 }
 
 class V1Model extends Model
 {
-    static public function buildV1Model(string $modelName)
+    public static function buildV1Model(string $modelName)
     {
         $this->modelNumber = $this->openModel($modelName);
         if ($this->modelNumber <= 0) {

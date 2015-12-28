@@ -5,7 +5,7 @@ require_once "4-4.php";
 
 class V2Model extends Model
 {
-    static public function buildV2Model(string $modelName)
+    public static function buildV2Model(string $modelName)
     {
         if (!$this->openModel($modelName)) {
             return null;
