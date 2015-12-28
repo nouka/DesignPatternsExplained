@@ -1,4 +1,7 @@
 <?php
+/**
+ * Strategyパターンの実装
+ */
 class TaskController
 {
     public function process()
